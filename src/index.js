@@ -9,10 +9,12 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 app.use(express.static(_dirname +'/public'))
+console.log(_dirname);
+
 
 const PORT = 9090
 app.listen(PORT, () => {
-    console.log();
+    console.log(PORT);
     
 })
 
